@@ -1,0 +1,101 @@
+body {
+    width:414px;
+    background-color:#E5E5E5;
+    box-sizing: border-box;
+
+}
+
+.wrapper{
+    max-width: 414px;
+}
+
+/*HEADER*/
+header {
+    height: 92px;
+    width: 414px; 
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 4px;
+    position:fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.header__slogan {
+    font-family: 'Righteous', cursive;
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 55px;
+    margin-left: 21px;
+}
+
+.header__moto {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 21px;
+    margin-bottom: 18px; 
+}
+/*END*/
+
+/*MAIN*/
+main {
+    margin-top: 96px;
+    margin-left: 19px;
+    margin-bottom: 92px;
+}
+
+.options {
+    margin-top: 27px;
+}
+
+.options__title {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+}
+.options__products{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product {
+    width: 172px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 18px 14px 14px 14px;
+}
+
+.product img {
+    height: 87px;
+    width: 144px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #E5E5E5;
+}
+/*END*/
+
+/*FOOTER*/
+footer {
+    height: 92px;
+    width: 414px;
+    background-color: #FFFFFF;
+    position:fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+.button-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*END*/
+
