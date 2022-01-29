@@ -111,6 +111,7 @@ ion-icon {
     right: 10px;
     bottom: 10px;
     z-index: 2;
+    display: none;
 }
 
 .selected{
@@ -145,6 +146,11 @@ button {
     font-size: 20px;
     color: #FFFFFF;
 
+}
+
+.readyButton{
+    background-color: #32B72F;
+    font-weight: bold;
 }
 
 .button-wrapper{

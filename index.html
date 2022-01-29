@@ -34,7 +34,7 @@
                         <p class="product__title">1Up Mushroom</p>
                         <p class="product__description">Revitalizante</p>
                         <p class="product__price">R$ 10,95</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
@@ -43,7 +43,7 @@
                         <p class="product__title">Queijo de cabra</p>
                         <p class="product__description">Made in Skyrim</p>
                         <p class="product__price">R$ 79,50</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
@@ -52,7 +52,7 @@
                         <p class="product__title">Peru assado</p>
                         <p class="product__description">Refeição completa!</p>
                         <p class="product__price">R$ 49,10</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                         <p class="product__title">Nuka Cola</p>
                         <p class="product__description">Pode conter traços de urânio-235</p>
                         <p class="product__price">R$ 5,99</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
@@ -76,7 +76,7 @@
                         <p class="product__title">Estus Flask</p>
                         <p class="product__description">Requer fogueira para refil gratuito</p>
                         <p class="product__price">R$ 8,75</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
@@ -85,7 +85,7 @@
                         <p class="product__title">Toussaint Wine</p>
                         <p class="product__description">Da vinícola de Gerald of Rivia</p>
                         <p class="product__price">R$ 798,00</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                         <p class="product__title">Bolo de chocolate</p>
                         <p class="product__description">Not a lie</p>
                         <p class="product__price">R$ 22,35</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
@@ -109,7 +109,7 @@
                         <p class="product__title">Monster cake</p>
                         <p class="product__description">Cupcake monstruoso</p>
                         <p class="product__price">R$ 13,50</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
@@ -118,7 +118,7 @@
                         <p class="product__title">Picolé seasalt</p>
                         <p class="product__description">Uma sobremesa?</p>
                         <p class="product__price">R$ 49,10</p>
-                        <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+                        <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
                 </div>
@@ -129,13 +129,15 @@
         <!--footer close-order-->
         <footer>
             <div class="button-wrapper">
-                <button type="button">Selecione os 3 itens para fechar o pedido</button>
+                <button type="button" class="waitingButton">Selecione os 3 itens para fechar o pedido</button>
+                <button type="button" class="readyButton hidden">Fechar o pedido</button>
             </div>
         </footer>
     </div>
     
-    <script src="script.js"></script>
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
