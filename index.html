@@ -29,7 +29,7 @@
             <div class="options dishes">
                 <p class="options__title">Primeiro, seu prato</p>
                 <div class="options__products">
-                    <div class="product" onclick="selectDish(this)">
+                    <div class="product" onclick="selectDish(this, '1Up Mushroom', 10.95)">
                         <img src="/images/1up.png">
                         <p class="product__title">1Up Mushroom</p>
                         <p class="product__description">Revitalizante</p>
@@ -38,7 +38,7 @@
 
                     </div>
 
-                    <div class="product" onclick="selectDish(this)">
+                    <div class="product" onclick="selectDish(this, 'Queijo de cabra', 79.50)">
                         <img src="/images/Goat_cheese_wheel.png">
                         <p class="product__title">Queijo de cabra</p>
                         <p class="product__description">Made in Skyrim</p>
@@ -47,7 +47,7 @@
 
                     </div>
 
-                    <div class="product" onclick="selectDish(this)">
+                    <div class="product" onclick="selectDish(this, 'Peru assado', 49,10)">
                         <img src="/images/turkey.jpg">
                         <p class="product__title">Peru assado</p>
                         <p class="product__description">Refeição completa!</p>
@@ -62,7 +62,7 @@
             <div class="options drinks">
                 <p class="options__title">Agora, sua bebida</p>
                 <div class="options__products">
-                    <div class="product" onclick="selectDrink(this)">
+                    <div class="product" onclick="selectDrink(this, 'Nuka Cola', 5.99)">
                         <img src="/images/nukacola.jpg">
                         <p class="product__title">Nuka Cola</p>
                         <p class="product__description">Pode conter traços de urânio-235</p>
@@ -71,7 +71,7 @@
 
                     </div>
 
-                    <div class="product" onclick="selectDrink(this)">
+                    <div class="product" onclick="selectDrink(this, 'Estus Flask', 8.75)">
                         <img src="/images/estus.png">
                         <p class="product__title">Estus Flask</p>
                         <p class="product__description">Requer fogueira para refil gratuito</p>
@@ -80,7 +80,7 @@
 
                     </div>
 
-                    <div class="product" onclick="selectDrink(this)">
+                    <div class="product" onclick="selectDrink(this, 'Toussaint wine', 798.0)">
                         <img src="/images/wine.jpg">
                         <p class="product__title">Toussaint Wine</p>
                         <p class="product__description">Da vinícola de Gerald of Rivia</p>
@@ -95,7 +95,7 @@
             <div class="options desserts">
                 <p class="options__title">Por fim, sua sobremesa</p>
                 <div class="options__products">
-                    <div class="product" onclick="selectDessert(this)">
+                    <div class="product" onclick="selectDessert(this, 'Bolo de chocolate', 22.35)">
                         <img src="/images/200px-Portal_Cake.png">
                         <p class="product__title">Bolo de chocolate</p>
                         <p class="product__description">Not a lie</p>
@@ -104,7 +104,7 @@
 
                     </div>
 
-                    <div class="product" onclick="selectDessert(this)">
+                    <div class="product" onclick="selectDessert(this, 'Monster cake', 13.50)">
                         <img src="/images/monster_cake.jpg">
                         <p class="product__title">Monster cake</p>
                         <p class="product__description">Cupcake monstruoso</p>
@@ -113,11 +113,11 @@
 
                     </div>
 
-                    <div class="product" onclick="selectDessert(this)">
+                    <div class="product" onclick="selectDessert(this, 'Picolé seasalt', 9.10)">
                         <img src="/images/sea-salt.jpg">
                         <p class="product__title">Picolé seasalt</p>
                         <p class="product__description">Uma sobremesa?</p>
-                        <p class="product__price">R$ 49,10</p>
+                        <p class="product__price">R$ 9,10</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
@@ -130,9 +130,11 @@
         <footer>
             <div class="button-wrapper">
                 <button type="button" class="waitingButton">Selecione os 3 itens para fechar o pedido</button>
-                <button type="button" class="readyButton hidden">Fechar o pedido</button>
+                <button type="button" class="readyButton hidden" onclick="getAdditionalInfos()">Fechar o pedido</button>
             </div>
         </footer>
+
+  
     </div>
     
     

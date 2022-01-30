@@ -37,7 +37,7 @@ header {
     margin-left: 21px;
     margin-bottom: 18px; 
 }
-/*END*/
+
 
 /*MAIN*/
 main {
@@ -120,8 +120,6 @@ ion-icon {
 
 
 
-/*END*/
-
 /*FOOTER*/
 footer {
     height: 92px;
@@ -161,8 +159,15 @@ button {
     align-items: center;
 }
 
-/*END*/
 
+
+
+
+
+
+
+
+/*FUNCTIONAL*/
 .hidden{
     display: none;
 }
