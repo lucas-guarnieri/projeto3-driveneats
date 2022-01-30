@@ -102,7 +102,7 @@ function getAdditionalInfos(){
 function closeOrder(){
     let totalSum = dishPrice + drinkPrice + dessertPrice;
     const whatsappMessage = `Olá, gostaria de fazer o pedido:\n- Prato: ${dishChoice}\n- Bebida: ${drinkChoice}\n- Sobremesa: ${dessertChoice}\n Total: R$ ${(totalSum).toFixed(2).replace('.',',')}\n\n Nome: ${userName}\n Endereço: ${userAddress}`;
-    window.open(`https://wa.me/5519998215333?text=${encodeURIComponent(whatsappMessage)}`);
+    window.open(`https://wa.me/5519999995555?text=${encodeURIComponent(whatsappMessage)}`);
 }
 
 function cancel(){

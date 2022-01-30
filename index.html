@@ -28,30 +28,30 @@
             <!--main dish-->
             <div class="options dishes">
                 <p class="options__title">Primeiro, seu prato</p>
-                <div class="options__products">
-                    <div class="product" onclick="selectDish(this, '1Up Mushroom', 10.95)">
+                <div class="options__products" data-identifier="dishes">
+                    <div class="product" data-identifier="food-option" onclick="selectDish(this, '1Up Mushroom', 10.95)">
                         <img src="/images/1up.png">
-                        <p class="product__title">1Up Mushroom</p>
+                        <p class="product__title" data-identifier="food-title">1Up Mushroom</p>
                         <p class="product__description">Revitalizante</p>
-                        <p class="product__price">R$ 10,95</p>
+                        <p class="product__price" data-identifier="food-price">R$ 10,95</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
-                    <div class="product" onclick="selectDish(this, 'Queijo de cabra', 79.50)">
+                    <div class="product" data-identifier="food-option" onclick="selectDish(this, 'Queijo de cabra', 79.50)">
                         <img src="/images/Goat_cheese_wheel.png">
-                        <p class="product__title">Queijo de cabra</p>
+                        <p class="product__title" data-identifier="food-title">Queijo de cabra</p>
                         <p class="product__description">Made in Skyrim</p>
-                        <p class="product__price">R$ 79,50</p>
+                        <p class="product__price" data-identifier="food-price">R$ 79,50</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
-                    <div class="product" onclick="selectDish(this, 'Peru assado', 49,10)">
+                    <div class="product" data-identifier="food-option" onclick="selectDish(this, 'Peru assado', 49,10)">
                         <img src="/images/turkey.jpg">
-                        <p class="product__title">Peru assado</p>
+                        <p class="product__title" data-identifier="food-title">Peru assado</p>
                         <p class="product__description">Refeição completa!</p>
-                        <p class="product__price">R$ 49,10</p>
+                        <p class="product__price" data-identifier="food-price">R$ 49,10</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
@@ -61,30 +61,30 @@
             <!--drinks-->
             <div class="options drinks">
                 <p class="options__title">Agora, sua bebida</p>
-                <div class="options__products">
-                    <div class="product" onclick="selectDrink(this, 'Nuka Cola', 5.99)">
+                <div class="options__products" data-identifier="drinks">
+                    <div class="product" data-identifier="food-option" onclick="selectDrink(this, 'Nuka Cola', 5.99)">
                         <img src="/images/nukacola.jpg">
-                        <p class="product__title">Nuka Cola</p>
+                        <p class="product__title" data-identifier="food-title">Nuka Cola</p>
                         <p class="product__description">Pode conter traços de urânio-235</p>
-                        <p class="product__price">R$ 5,99</p>
+                        <p class="product__price" data-identifier="food-price">R$ 5,99</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
-                    <div class="product" onclick="selectDrink(this, 'Estus Flask', 8.75)">
+                    <div class="product" data-identifier="food-option" onclick="selectDrink(this, 'Estus Flask', 8.75)">
                         <img src="/images/estus.png">
-                        <p class="product__title">Estus Flask</p>
+                        <p class="product__title" data-identifier="food-title">Estus Flask</p>
                         <p class="product__description">Requer fogueira para refil gratuito</p>
-                        <p class="product__price">R$ 8,75</p>
+                        <p class="product__price" data-identifier="food-price">R$ 8,75</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
-                    <div class="product" onclick="selectDrink(this, 'Toussaint wine', 798.0)">
+                    <div class="product" data-identifier="food-option" onclick="selectDrink(this, 'Toussaint wine', 798.0)">
                         <img src="/images/wine.jpg">
-                        <p class="product__title">Toussaint Wine</p>
+                        <p class="product__title" data-identifier="food-title">Toussaint Wine</p>
                         <p class="product__description">Da vinícola de Gerald of Rivia</p>
-                        <p class="product__price">R$ 798,00</p>
+                        <p class="product__price" data-identifier="food-price">R$ 798,00</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
@@ -94,30 +94,30 @@
             <!--desserts-->
             <div class="options desserts">
                 <p class="options__title">Por fim, sua sobremesa</p>
-                <div class="options__products">
-                    <div class="product" onclick="selectDessert(this, 'Bolo de chocolate', 22.35)">
+                <div class="options__products" data-identifier="desserts">
+                    <div class="product" data-identifier="food-option" onclick="selectDessert(this, 'Bolo de chocolate', 22.35)">
                         <img src="/images/200px-Portal_Cake.png">
-                        <p class="product__title">Bolo de chocolate</p>
+                        <p class="product__title" data-identifier="food-title">Bolo de chocolate</p>
                         <p class="product__description">Not a lie</p>
-                        <p class="product__price">R$ 22,35</p>
+                        <p class="product__price" data-identifier="food-price">R$ 22,35</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
-                    <div class="product" onclick="selectDessert(this, 'Monster cake', 13.50)">
+                    <div class="product" data-identifier="food-option" onclick="selectDessert(this, 'Monster cake', 13.50)">
                         <img src="/images/monster_cake.jpg">
-                        <p class="product__title">Monster cake</p>
+                        <p class="product__title" data-identifier="food-title">Monster cake</p>
                         <p class="product__description">Cupcake monstruoso</p>
-                        <p class="product__price">R$ 13,50</p>
+                        <p class="product__price" data-identifier="food-price">R$ 13,50</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
 
-                    <div class="product" onclick="selectDessert(this, 'Picolé seasalt', 9.10)">
+                    <div class="product" data-identifier="food-option" onclick="selectDessert(this, 'Picolé seasalt', 9.10)">
                         <img src="/images/sea-salt.jpg">
-                        <p class="product__title">Picolé seasalt</p>
+                        <p class="product__title" data-identifier="food-title">Picolé seasalt</p>
                         <p class="product__description">Uma sobremesa?</p>
-                        <p class="product__price">R$ 9,10</p>
+                        <p class="product__price" data-identifier="food-price">R$ 9,10</p>
                         <ion-icon name="checkmark-circle" ></ion-icon>
 
                     </div>
@@ -135,7 +135,7 @@
         </footer>
 
         <div class ="hiddenUi hidden">
-            <div class="confirmationScreen">
+            <div class="confirmationScreen" data-identifier="confirmation-dialog">
                 <p class="hiddenUi__header">Confirme seu pedido</p>
 
                 <div class="hiddenUi__line hiddenUi__nameLine">
