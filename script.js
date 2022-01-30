@@ -63,6 +63,10 @@ function isReady(){
 }
 
 function getAdditionalInfos(){
+
+
+    let totalSum = dish_price + drink_price + dessert_price;
+   
     user_name = prompt("Qual é o seu nome?");
     const nameTemp = document.querySelector(".hiddenUi__name");
     nameTemp.innerHTML = user_name;
@@ -75,22 +79,22 @@ function getAdditionalInfos(){
     dishTemp.innerHTML = dish_choice;
 
     const dishPriceTemp = document.querySelector(".hiddenUi__dishPrice");
-    dishPriceTemp.innerHTML = dish_price.toFixed(2);
+    dishPriceTemp.innerHTML = dish_price.toFixed(2).replace('.',',');
 
     const drinkTemp = document.querySelector(".hiddenUi__drink");
     drinkTemp.innerHTML = drink_choice;
 
     const drinkPriceTemp = document.querySelector(".hiddenUi__drinkPrice");
-    drinkPriceTemp.innerHTML = drink_price.toFixed(2);
+    drinkPriceTemp.innerHTML = drink_price.toFixed(2).replace('.',',');
 
     const dessertTemp = document.querySelector(".hiddenUi__dessert");
     dessertTemp.innerHTML = dessert_choice;
 
     const dessertPriceTemp = document.querySelector(".hiddenUi__dessertPrice");
-    dessertPriceTemp.innerHTML = dessert_price.toFixed(2);
+    dessertPriceTemp.innerHTML = dessert_price.toFixed(2).replace('.',',');
     
     const totalSumTemp = document.querySelector(".hiddenUi__totalSum");
-    totalSumTemp.innerHTML = `R$ ${(dish_price + drink_price + dessert_price).toFixed(2)}`;
+    totalSumTemp.innerHTML = `R$ ${(totalSum).toFixed(2).replace('.',',')}`;
 
     (document.querySelector(".hiddenUi")).classList.remove("hidden");
 
