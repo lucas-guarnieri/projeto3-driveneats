@@ -1,15 +1,15 @@
 
-let dish_choice;
-let drink_choice;
-let dessert_choice;
-let dish_price
-let drink_price
-let dessert_price
-let user_name
-let user_address
-let choice_dish = false
-let choice_drink = false
-let choice_dessert = false
+let dishChoice;
+let drinkChoice;
+let dessertChoice;
+let dishPrice
+let drinkPrice
+let dessertPrice
+let userName
+let userAddress
+let dishIsChosen = false
+let drinkIsChosen = false
+let dessertIsChosen = false
 
 function selectDish(dish, title, price){
 
@@ -18,9 +18,9 @@ function selectDish(dish, title, price){
         selected.classList.remove("selected");
     }
     dish.classList.add("selected");
-    dish_choice = title;
-    dish_price = price;
-    choice_dish = true;
+    dishChoice = title;
+    dishPrice = price;
+    dishIsChosen = true;
     isReady();
 
 }
@@ -32,9 +32,9 @@ function selectDrink(drink, title, price){
         selected.classList.remove("selected");
     }
     drink.classList.add("selected");
-    drink_choice = title;
-    drink_price = price;
-    choice_drink = true;
+    drinkChoice = title;
+    drinkPrice = price;
+    drinkIsChosen = true;
     isReady();
 
 }
@@ -46,15 +46,15 @@ function selectDessert(dessert, title, price){
         selected.classList.remove("selected");
     }
     dessert.classList.add("selected");
-    dessert_choice = title
-    dessert_price = price;
-    choice_dessert = true;
+    dessertChoice = title
+    dessertPrice = price;
+    dessertIsChosen = true;
     isReady();
 }
 
 function isReady(){
     precoTotal = document.querySelector(".dishes .selected").getElementsByClassName("product__price");
-    if (choice_dish && choice_drink && choice_dessert){
+    if (dishIsChosen && drinkIsChosen && dessertIsChosen){
         const waiting = document.querySelector(".waitingButton");
         waiting.classList.add("hidden");
         const ready = document.querySelector(".readyButton");
@@ -65,39 +65,46 @@ function isReady(){
 function getAdditionalInfos(){
 
 
-    let totalSum = dish_price + drink_price + dessert_price;
+    let totalSum = dishPrice + drinkPrice + dessertPrice;
    
-    user_name = prompt("Qual é o seu nome?");
+    userName = prompt("Qual é o seu nome?");
     const nameTemp = document.querySelector(".hiddenUi__name");
-    nameTemp.innerHTML = user_name;
+    nameTemp.innerHTML = userName;
 
-    user_address = prompt("Qual é o endereço de entrega?");
+    userAddress = prompt("Qual é o endereço de entrega?");
     const adressTemp = document.querySelector(".hiddenUi__address");
-    adressTemp.innerHTML = user_address;
+    adressTemp.innerHTML = userAddress;
 
     const dishTemp = document.querySelector(".hiddenUi__dish");
-    dishTemp.innerHTML = dish_choice;
+    dishTemp.innerHTML = dishChoice;
 
     const dishPriceTemp = document.querySelector(".hiddenUi__dishPrice");
-    dishPriceTemp.innerHTML = dish_price.toFixed(2).replace('.',',');
+    dishPriceTemp.innerHTML = dishPrice.toFixed(2).replace('.',',');
 
     const drinkTemp = document.querySelector(".hiddenUi__drink");
-    drinkTemp.innerHTML = drink_choice;
+    drinkTemp.innerHTML = drinkChoice;
 
     const drinkPriceTemp = document.querySelector(".hiddenUi__drinkPrice");
-    drinkPriceTemp.innerHTML = drink_price.toFixed(2).replace('.',',');
+    drinkPriceTemp.innerHTML = drinkPrice.toFixed(2).replace('.',',');
 
     const dessertTemp = document.querySelector(".hiddenUi__dessert");
-    dessertTemp.innerHTML = dessert_choice;
+    dessertTemp.innerHTML = dessertChoice;
 
     const dessertPriceTemp = document.querySelector(".hiddenUi__dessertPrice");
-    dessertPriceTemp.innerHTML = dessert_price.toFixed(2).replace('.',',');
+    dessertPriceTemp.innerHTML = dessertPrice.toFixed(2).replace('.',',');
     
     const totalSumTemp = document.querySelector(".hiddenUi__totalSum");
     totalSumTemp.innerHTML = `R$ ${(totalSum).toFixed(2).replace('.',',')}`;
 
     (document.querySelector(".hiddenUi")).classList.remove("hidden");
+}
 
-  
+function closeOrder(){
+    let totalSum = dishPrice + drinkPrice + dessertPrice;
+    const whatsappMessage = `Olá, gostaria de fazer o pedido:\n- Prato: ${dishChoice}\n- Bebida: ${drinkChoice}\n- Sobremesa: ${dessertChoice}\n Total: R$ ${(totalSum).toFixed(2).replace('.',',')}\n\n Nome: ${userName}\n Endereço: ${userAddress}`;
+    window.open(`https://wa.me/5519998215333?text=${encodeURIComponent(whatsappMessage)}`);
+}
 
+function cancel(){
+    (document.querySelector(".hiddenUi")).classList.add("hidden");
 }
