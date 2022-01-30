@@ -132,7 +132,20 @@ footer {
     z-index: 3;
 }
 
-button {
+.readyButton  {
+    height: 61px;
+    width: 364px;
+    padding: 0 80px;
+    background-color: #32B72F;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.waitingButton{
     height: 61px;
     width: 364px;
     padding: 0 80px;
@@ -143,13 +156,8 @@ button {
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
-
 }
 
-.readyButton{
-    background-color: #32B72F;
-    font-weight: bold;
-}
 
 .button-wrapper{
     height: 100%;
@@ -160,8 +168,82 @@ button {
 }
 
 
+/*HIDDEN UI*/
+
+.hiddenUi{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 4;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmationScreen{
+    width: 377px;
+    height: 353px; 
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: relative;
+    
+}
+
+.hiddenUi__header{
+    width: 375px;
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 21px;  
+    left: 1px;
+    margin-top: 21px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.hiddenUi__line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px 13px 25px;
+}
+
+.hiddenUi__nameLine{
+    margin-top: 86px;
+}
+
+.hiddenUi__Button{
+    width: 333px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    margin-top: 11px;
+    margin-left: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #50D074;
+}
+
+.cancel{
+    margin-top: 0px;
+    background: #50D074;
+    color: #FFFFFF;
+    
+}
 
 
 
