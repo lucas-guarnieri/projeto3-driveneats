@@ -6,7 +6,7 @@ let dish_price
 let drink_price
 let dessert_price
 let user_name
-let user_adress
+let user_address
 let choice_dish = false
 let choice_drink = false
 let choice_dessert = false
@@ -64,7 +64,36 @@ function isReady(){
 
 function getAdditionalInfos(){
     user_name = prompt("Qual é o seu nome?");
-    user_adress = prompt("Qual é o endereço de entrega?");
-    alert(user_name);
+    const nameTemp = document.querySelector(".hiddenUi__name");
+    nameTemp.innerHTML = user_name;
+
+    user_address = prompt("Qual é o endereço de entrega?");
+    const adressTemp = document.querySelector(".hiddenUi__address");
+    adressTemp.innerHTML = user_address;
+
+    const dishTemp = document.querySelector(".hiddenUi__dish");
+    dishTemp.innerHTML = dish_choice;
+
+    const dishPriceTemp = document.querySelector(".hiddenUi__dishPrice");
+    dishPriceTemp.innerHTML = dish_price.toFixed(2);
+
+    const drinkTemp = document.querySelector(".hiddenUi__drink");
+    drinkTemp.innerHTML = drink_choice;
+
+    const drinkPriceTemp = document.querySelector(".hiddenUi__drinkPrice");
+    drinkPriceTemp.innerHTML = drink_price.toFixed(2);
+
+    const dessertTemp = document.querySelector(".hiddenUi__dessert");
+    dessertTemp.innerHTML = dessert_choice;
+
+    const dessertPriceTemp = document.querySelector(".hiddenUi__dessertPrice");
+    dessertPriceTemp.innerHTML = dessert_price.toFixed(2);
+    
+    const totalSumTemp = document.querySelector(".hiddenUi__totalSum");
+    totalSumTemp.innerHTML = `R$ ${(dish_price + drink_price + dessert_price).toFixed(2)}`;
+
+    (document.querySelector(".hiddenUi")).classList.remove("hidden");
+
+  
 
 }

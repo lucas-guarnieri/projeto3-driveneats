@@ -185,7 +185,7 @@ footer {
 
 .confirmationScreen{
     width: 377px;
-    height: 353px; 
+    
     background: #50D074;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
@@ -222,7 +222,7 @@ footer {
 }
 
 .hiddenUi__nameLine{
-    margin-top: 86px;
+    margin-top: 100px;
 }
 
 .hiddenUi__Button{
@@ -231,7 +231,7 @@ footer {
     background: #FFFFFF;
     border-radius: 50px;
     border: none;
-    margin-top: 11px;
+    margin-top: 20px;
     margin-left: 22px;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
@@ -239,7 +239,8 @@ footer {
 }
 
 .cancel{
-    margin-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background: #50D074;
     color: #FFFFFF;
     
@@ -252,4 +253,8 @@ footer {
 /*FUNCTIONAL*/
 .hidden{
     display: none;
+}
+
+.bold{
+    font-weight: 700;
 }
